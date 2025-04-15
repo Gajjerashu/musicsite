@@ -1,0 +1,239 @@
+/* navbar */
+
+body {
+    background: #0d0d0d;
+    color: white;
+    font-family: 'Segoe UI', sans-serif;
+  }
+
+  .navbar {
+    background-color: #1a1a1a;
+  }
+
+  .nav-link {
+    color: #fff !important;
+    margin-right: 1rem;
+  }
+
+  .nav-link:hover {
+    color: #0dcaf0 !important;
+  }
+
+  .music-player {
+    margin-top: 4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .player-card {
+    background: #222;
+    padding: 2rem;
+    border-radius: 20px;
+    text-align: center;
+    max-width: 400px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.7);
+  }
+
+  .album-art {
+    width: 100%;
+    border-radius: 20px;
+    margin-bottom: 1rem;
+  }
+
+  .controls button {
+    margin: 0 10px;
+  }
+
+  /* Sign In hover dropdown */
+.dropdown:hover .account-dropdown {
+    display: block;
+    animation: fadeIn 0.3s ease-in-out;
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(-10px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  /* Account hover form */
+.account-hover {
+    position: relative;
+  }
+  
+  .account-form {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    width: 260px;
+    display: none;
+    z-index: 1000;
+    animation: fadeIn 0.3s ease-in-out;
+  }
+  
+  .account-hover:hover .account-form {
+    display: block;
+  }
+  
+  /* Fade In Effect */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(-10px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  /* Media responsiveness */
+  @media (max-width: 768px) {
+    .account-form {
+      right: auto;
+      left: 0;
+    }
+  }
+
+  @media (max-width: 768px) {
+    form[role="search"] {
+      width: 100%;
+      margin-top: 10px;
+    }
+    form[role="search"] .input-group {
+      flex-direction: column;
+    }
+    form[role="search"] .form-control,
+    form[role="search"] .form-select,
+    form[role="search"] .btn {
+      width: 100%;
+      margin-top: 5px;
+    }
+  }
+  
+  
+
+  /* Music */
+
+  body {
+    background: #3F4F44;
+    color: white;
+    font-family: 'Segoe UI', sans-serif;
+  }
+
+  .navbar {
+    background-color: #1a1a1a;
+  }
+
+  .nav-link {
+    color: #fff !important;
+    margin-right: 1rem;
+  }
+
+  .nav-link:hover {
+    color: #0dcaf0 !important;
+  }
+
+  .section-title {
+    margin: 2rem 0 1rem;
+    font-size: 1.5rem;
+    font-weight: bold;
+    border-left: 5px solid #0dcaf0;
+    padding-left: 10px;
+  }
+
+  .music-card {
+    background: #222;
+    border-radius: 15px;
+    padding: 1rem;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  .music-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 10px #0dcaf0;
+  }
+
+  .music-image {
+    width: 100%;
+    border-radius: 10px;
+    height: 200px;
+  }
+
+  .music-title {
+    margin-top: 0.5rem;
+    font-weight: bold;
+  }
+
+  .music-player {
+    margin-top: 4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .player-card {
+    background: #222;
+    padding: 2rem;
+    border-radius: 20px;
+    text-align: center;
+    max-width: 400px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.7);
+  }
+
+  .album-art {
+    width: 100%;
+    border-radius: 20px;
+    margin-bottom: 1rem;
+  }
+
+  /* Artiest */
+
+  .artist-card {
+    background-color: #222;
+    position: relative;
+    cursor: pointer;
+    aspect-ratio: 1/1;
+    transition: transform 0.3s ease;
+  }
+  
+  .artist-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 10px #0dcaf0;
+  }
+  
+  .artist-img {
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+  }
+  
+  .play-overlay {
+    position: absolute;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+  
+  .artist-card:hover .play-overlay {
+    opacity: 1;
+  }
+  
+  .artist-name {
+    position: absolute;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    font-weight: bold;
+    font-size: 14px;
+  }
+  
+  

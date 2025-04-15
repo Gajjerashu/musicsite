@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mini Music Player</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark px-4 py-2 shadow-sm">
+        <a class="navbar-brand fw-bold fs-4" href="#">🎵 MiniMusic</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMenu">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse justify-content-between" id="navbarMenu">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0 gap-2">
+                <li class="nav-item"><a class="nav-link" href="">Music</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Podcast</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Artist</a></li>
+                <!-- Search Input -->
+                <input type="text" class="form-control" placeholder="Search..." id="searchInput">
+
+                <!-- Search Button -->
+                <button class="btn btn-outline-light" type="submit">
+                    <i class="bi bi-search"></i>
+                </button>
+
+                <!-- Language Dropdown -->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="langDropdown"
+                        data-bs-toggle="dropdown">Language</a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Hindi</a></li>
+                        <li><a class="dropdown-item" href="#">English</a></li>
+                        <li><a class="dropdown-item" href="#">Punjabi</a></li>
+                        <li><a class="dropdown-item" href="#">Gujarati</a></li>
+                        <li><a class="dropdown-item" href="#">Tamil</a></li>
+                    </ul>
+                </li>
+            </ul>
+
+            <!-- Account Dropdown -->
+            <div class="account-hover position-relative">
+                <a href="#" class="nav-link text-white fw-semibold">Account</a>
+                <div class="account-form shadow rounded bg-white p-3">
+                    <h6 class="mb-3 text-center">🎧 Sign In</h6>
+                    <form>
+                        <div class="mb-2">
+                            <input type="email" class="form-control" placeholder="Email">
+                        </div>
+                        <div class="mb-2">
+                            <input type="password" class="form-control" placeholder="Password">
+                        </div>
+                        <button type="submit" class="btn btn-primary w-100">Login</button>
+                    </form>
+                    <hr>
+                    <p class="text-center mb-0"><small>Don't have an account? <a href="#">Register</a></small></p>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+
+
+    <!--Music-->
+
+    <section id="music">
+
+
+        <!-- Music Sections -->
+        <div class="container mt-5">
+            <div class="section-title">Trending Now</div>
+            <div class="row row-cols-2 row-cols-md-4 g-3">
+                <div class="col">
+                    <div class="music-card"><img src="mimg1.jpg" class="music-image">
+                        <div class="music-title">Hit Song</div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="music-card"><img src="mimg2.jpg" class="music-image">
+                        <div class="music-title">Love Song</div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="music-card"><img src="mimg3.jpg" class="music-image">
+                        <div class="music-title">DJ Party</div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="music-card"><img src="mimg4.jpg" class="music-image">
+                        <div class="music-title">Sad Song</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="section-title">Made Just for You</div>
+            <div class="row row-cols-2 row-cols-md-4 g-3">
+                <div class="col">
+                    <div class="music-card"><img src="mimg5.jpg" class="music-image">
+                        <div class="music-title">Your Mix 1</div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="music-card"><img src="mimg6.jpg" class="music-image">
+                        <div class="music-title">Chill Vibes</div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="music-card"><img src="mimg7.jpg" class="music-image">
+                        <div class="music-title">Romantic Hits</div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="music-card"><img src="mimg8.jpg" class="music-image">
+                        <div class="music-title">Desi Mix</div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="section-title">Religion & Spirituality Podcasts</div>
+            <div class="row row-cols-2 row-cols-md-4 g-3">
+                <div class="col">
+                    <div class="music-card"><img src="mimg9.jpg" class="music-image">
+                        <div class="music-title">Meditation</div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="music-card"><img src="mimg10.jpg" class="music-image">
+                        <div class="music-title">Bhagavad Gita</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="section-title">Bhakti - Hindi</div>
+            <div class="row row-cols-2 row-cols-md-4 g-3">
+                <div class="col">
+                    <div class="music-card"><img src="mimg11.jpg" class="music-image">
+                        <div class="music-title">Hanuman Chalisa</div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="music-card"><img src="mimg12.jpg" class="music-image">
+                        <div class="music-title">Shiv Bhajans</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="section-title">Ishq Wale Podcasts</div>
+            <div class="row row-cols-2 row-cols-md-4 g-3 mb-5">
+                <div class="col">
+                    <div class="music-card"><img src="mimg13.jpg" class="music-image">
+                        <div class="music-title">Love Series</div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="music-card"><img src="mimg14.jpg" class="music-image">
+                        <div class="music-title">Romantic Talks</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <!--Podcast-->
+
+
+    <!-- Artist Section -->
+    <section class="container mt-5">
+        <h3 class="section-title">Popular Artists</h3>
+        <div class="row row-cols-2 row-cols-md-4 row-cols-lg-6 g-4">
+
+            <!-- Artist Card -->
+            <div class="col">
+                <div class="artist-card position-relative text-center rounded-circle overflow-hidden">
+                    <img src="si1.png" class="artist-img w-100 border">
+
+                    <!-- Hover Play/Pause Icon -->
+                    <div class="play-overlay d-flex justify-content-center align-items-center">
+                        <button class="btn btn-light btn-sm rounded-circle" onclick="togglePlay(this)">
+                            <i class="bi bi-play-fill fs-4"></i>
+                        </button>
+                    </div>
+
+                    <!-- Artist Name -->
+                    <div class="artist-name text-white text-center w-100 py-1"><a
+                            href="https://www.jiosaavn.com/artist/arijit-singh-songs/LlRWpHzy3Hk_">
+                            Arijit Singh</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Repeat other artist cards -->
+            <div class="col">
+                <div class="artist-card position-relative text-center rounded-circle overflow-hidden">
+                    <img src="si2.jpg" class="artist-img w-100 border">
+                    <div class="play-overlay d-flex justify-content-center align-items-center">
+                        <button class="btn btn-light btn-sm rounded-circle" onclick="togglePlay(this)">
+                            <i class="bi bi-play-fill fs-4"></i>
+                        </button>
+                    </div>
+                    <div class="artist-name text-white text-center w-100 py-1"><a
+                            href="https://www.jiosaavn.com/artist/neha-kakkar-songs/EkEBV7JAU-I_">Neha Kakkar</div></a>
+                </div>
+            </div>
+
+            <!-- Repeat other artist cards -->
+            <div class="col">
+                <div class="artist-card position-relative text-center rounded-circle overflow-hidden">
+                    <img src="si3.jpg" class="artist-img w-100 border">
+                    <div class="play-overlay d-flex justify-content-center align-items-center">
+                        <button class="btn btn-light btn-sm rounded-circle" onclick="togglePlay(this)">
+                            <i class="bi bi-play-fill fs-4"></i>
+                        </button>
+                    </div>
+                    <div class="artist-name text-white text-center w-100 py-1">Mika Singh</div>
+                </div>
+            </div>
+
+            <!-- Repeat other artist cards -->
+            <div class="col">
+                <div class="artist-card position-relative text-center rounded-circle overflow-hidden">
+                    <img src="si4.jpg" class="artist-img w-100 border">
+                    <div class="play-overlay d-flex justify-content-center align-items-center">
+                        <button class="btn btn-light btn-sm rounded-circle" onclick="togglePlay(this)">
+                            <i class="bi bi-play-fill fs-4"></i>
+                        </button>
+                    </div>
+                    <div class="artist-name text-white text-center w-100 py-1">Armaan Malik</div>
+                </div>
+            </div>
+
+            <!-- Repeat other artist cards -->
+            <div class="col">
+                <div class="artist-card position-relative text-center rounded-circle overflow-hidden">
+                    <img src="si5.jpeg" class="artist-img w-100 border">
+                    <div class="play-overlay d-flex justify-content-center align-items-center">
+                        <button class="btn btn-light btn-sm rounded-circle" onclick="togglePlay(this)">
+                            <i class="bi bi-play-fill fs-4"></i>
+                        </button>
+                    </div>
+                    <div class="artist-name text-white text-center w-100 py-1">Shaan</div>
+                </div>
+            </div>
+
+            <!-- Repeat other artist cards -->
+            <div class="col">
+                <div class="artist-card position-relative text-center rounded-circle overflow-hidden">
+                    <img src="si6.jpg" class="artist-img w-100 border">
+                    <div class="play-overlay d-flex justify-content-center align-items-center">
+                        <button class="btn btn-light btn-sm rounded-circle" onclick="togglePlay(this)">
+                            <i class="bi bi-play-fill fs-4"></i>
+                        </button>
+                    </div>
+                    <div class="artist-name text-white text-center w-100 py-1">kk</div>
+                </div>
+            </div>
+
+            <!-- Repeat other artist cards -->
+            <div class="col">
+                <div class="artist-card position-relative text-center rounded-circle overflow-hidden">
+                    <img src="si7.jpg" class="artist-img w-100 border">
+                    <div class="play-overlay d-flex justify-content-center align-items-center">
+                        <button class="btn btn-light btn-sm rounded-circle" onclick="togglePlay(this)">
+                            <i class="bi bi-play-fill fs-4"></i>
+                        </button>
+                    </div>
+                    <div class="artist-name text-white text-center w-100 py-1">Shankar Eheson loy</div>
+                </div>
+            </div>
+
+            <!-- Repeat other artist cards -->
+            <div class="col">
+                <div class="artist-card position-relative text-center rounded-circle overflow-hidden">
+                    <img src="si8.jpg" class="artist-img w-100 border">
+                    <div class="play-overlay d-flex justify-content-center align-items-center">
+                        <button class="btn btn-light btn-sm rounded-circle" onclick="togglePlay(this)">
+                            <i class="bi bi-play-fill fs-4"></i>
+                        </button>
+                    </div>
+                    <div class="artist-name text-white text-center w-100 py-1">Atif Aslem</div>
+                </div>
+            </div>
+
+            <!-- Repeat other artist cards -->
+            <div class="col">
+                <div class="artist-card position-relative text-center rounded-circle overflow-hidden">
+                    <img src="si9.png" class="artist-img w-100 border">
+                    <div class="play-overlay d-flex justify-content-center align-items-center">
+                        <button class="btn btn-light btn-sm rounded-circle" onclick="togglePlay(this)">
+                            <i class="bi bi-play-fill fs-4"></i>
+                        </button>
+                    </div>
+                    <div class="artist-name text-white text-center w-100 py-1">Udit Naryan</div>
+                </div>
+            </div>
+
+            <!-- Repeat other artist cards -->
+            <div class="col">
+                <div class="artist-card position-relative text-center rounded-circle overflow-hidden">
+                    <img src="si10.jpg" class="artist-img w-100 border">
+                    <div class="play-overlay d-flex justify-content-center align-items-center">
+                        <button class="btn btn-light btn-sm rounded-circle" onclick="togglePlay(this)">
+                            <i class="bi bi-play-fill fs-4"></i>
+                        </button>
+                    </div>
+                    <div class="artist-name text-white text-center w-100 py-1">Kumar Sanu</div>
+                </div>
+            </div>
+
+            <!-- Repeat other artist cards -->
+            <div class="col">
+                <div class="artist-card position-relative text-center rounded-circle overflow-hidden">
+                    <img src="si11.jpg" class="artist-img w-100 border">
+                    <div class="play-overlay d-flex justify-content-center align-items-center">
+                        <button class="btn btn-light btn-sm rounded-circle" onclick="togglePlay(this)">
+                            <i class="bi bi-play-fill fs-4"></i>
+                        </button>
+                    </div>
+                    <div class="artist-name text-white text-center w-100 py-1">Alka Yagnik</div>
+                </div>
+            </div>
+
+            <!-- Repeat other artist cards -->
+            <div class="col">
+                <div class="artist-card position-relative text-center rounded-circle overflow-hidden">
+                    <img src="si12.jpg" class="artist-img w-100 border">
+                    <div class="play-overlay d-flex justify-content-center align-items-center">
+                        <button class="btn btn-light btn-sm rounded-circle" onclick="togglePlay(this)">
+                            <i class="bi bi-play-fill fs-4"></i>
+                        </button>
+                    </div>
+                    <div class="artist-name text-white text-center w-100 py-1">Neeti Mohan</div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
